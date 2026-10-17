@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Danilo Fernández (danilo_lhost) — Software Developer &amp; AI Systems Integrator. Sitios web, IA y automatización.">
+<meta name="theme-color" content="#E3E4E6">
+<meta property="og:title" content="Danilo Fernández — Software Developer &amp; AI Systems Integrator">
+<meta property="og:description" content="Sitios web, sistemas con IA y automatización. Trading y fútbol.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1013'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23F1F0EC'%3ED%3C/text%3E%3Ccircle cx='50' cy='44' r='4' fill='%232F48F5'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Danilo Fernández</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/extra.css">
+</head>
+<body>
+<div class="pre" id="pre" aria-hidden="true">
+<svg viewBox="0 0 100 100" preserveAspectRatio="none"><path id="prePath" d="M0 0 H100 V100 Q50 100 0 100 Z"/></svg>
+<span class="word" id="preWord">Hola</span>
+</div>
+<header class="hero" id="top">
+<div class="hero-fallback" aria-hidden="true"></div>
+<canvas id="field" aria-hidden="true"></canvas>
+<nav class="nav gutter" aria-label="Principal">
+<a class="brand" href="#top"><span class="c">©</span><span class="roll"><span>Code by Danilo</span><span>danilo_lhost</span></span></a>
+<ul>
+<li><a href="#experiencia" data-i18n="nav_exp">Experiencia</a></li>
+<li><a href="#proyectos" data-i18n="nav_proj">Proyectos</a></li>
+<li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+<li><button type="button" class="lang" id="langBtn" aria-label="Ver en inglés">EN</button></li>
+</ul>
+</nav>
+<div class="hero-code" aria-label="Perfil de Danilo en código">
+<div class="intro" id="intro">
+<span class="avail"><i></i><span data-x="avail">Disponible para proyectos</span></span>
+<p class="intro-big"><span data-x="hi">Hola, soy Danilo.</span> <span class="soft" data-x="port">Este es mi portafolio.</span></p>
+<p class="intro-sub" data-x="sub">Diseño y desarrollo sitios web, automatizaciones e integraciones de IA.</p>
+</div>
+<div class="code" id="codeCard">
+<div class="code-bar"><span class="file"><i></i>danilo.ts</span><span class="status" id="codeStatus">escribiendo…</span></div>
+<pre id="codePre"></pre>
+</div>
+<a class="scroll-hint" id="scrollHint" href="#stack" aria-label="Desliza para ver más">
+<span class="badge">
+<span class="core"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 2v11M3.5 8.5 8 13l4.5-4.5"/></svg></span>
+</span>
+<span class="hint-text" data-i18n="hint"><b>Desliza para ver más</b></span>
+</a>
+</div>
+<div class="hero-body gutter">
+<div class="right">
+<div class="role">
+<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 8v11H8"/></svg>
+<div class="role-row">
+<div>
+<p class="kicker">Software Developer</p>
+<p class="main">&amp; AI Systems<br>Integrator</p>
+</div>
+<svg class="globe" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+<circle cx="15" cy="15" r="13"/><ellipse cx="15" cy="15" rx="6" ry="13"/><ellipse cx="15" cy="15" rx="11" ry="13"/><ellipse cx="15" cy="15" rx="2" ry="13"/><path d="M2.5 11h25M2.5 19h25"/>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<div class="marquee" aria-label="Danilo Fernández">
+<div class="track" id="track" aria-hidden="true">
+<div class="group"><span class="nm">Danilo Fernández</span><span class="dash">—</span><span class="nm">Danilo Fernández</span><span class="dash">—</span></div>
+<div class="group"><span class="nm">Danilo Fernández</span><span class="dash">—</span><span class="nm">Danilo Fernández</span><span class="dash">—</span></div>
+</div>
+</div>
+</header>
+<main>
+<section class="stack gutter" id="stack">
+<div class="col">
+<h2>Stack</h2>
+<ul>
+<li data-i18n="stack_fe"><b>Frontend:</b> HTML5, CSS3, JavaScript y TypeScript sobre Node.js. Despliegue en <a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> y control de versiones en <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>.</li>
+<li data-i18n="stack_be"><b>Backend y arquitectura:</b> bases de datos con PostgreSQL y <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, autenticación y seguridad con NextAuth y JWT, y streaming de video.</li>
+<li data-i18n="stack_ai"><b>IA y automatizaciones:</b> vibecoder con certificación de <a href="https://www.anthropic.com" target="_blank" rel="noopener">Anthropic</a>. Integro IA en flujos de trabajo y monto servicios de marketing 100% automatizados.</li>
+<li data-i18n="stack_more"><b>Complementario:</b> trading de opciones sobre SPY desde hace más de 2 años.</li>
+</ul>
+</div>
+<a class="next" href="#trading" aria-label="Ir a Trading"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg></span></a>
+</section>
+<section class="trading" id="trading">
+<div class="tape" aria-hidden="true"><div class="t" id="tape"></div></div>
+<div class="chart" aria-hidden="true">
+<svg id="chartSvg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+<defs>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F48F5" stop-opacity=".35"/><stop offset="1" stop-color="#2F48F5" stop-opacity="0"/></linearGradient>
+<clipPath id="reveal"><rect id="revealRect" x="0" y="-20" width="0" height="340"/></clipPath>
+</defs>
+<g clip-path="url(#reveal)">
+<path id="areaPath" fill="url(#area)"/>
+<path id="linePath" fill="none" stroke="#2F48F5" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+</g>
+</svg>
+</div>
+<div class="inner gutter">
+<div class="head"><h2 style="color:rgba(241,240,236,.6)">Trading</h2><span class="mono" data-i18n="tr_kicker">Opciones financieras</span></div>
+<p class="spy" id="spy">SPY</p>
+<div class="tfacts">
+<div data-i18n="tr_years"><b>+2 años</b><span>Operando opciones sobre el S&amp;P 500.</span></div>
+<div data-i18n="tr_code"><b>Código + estructura</b><span>Escribo mis propios scripts para analizar el mercado y leer su estructura antes de entrar en calls o puts.</span></div>
+</div>
+<a class="next" href="#experiencia" aria-label="Ir a Experiencia"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg></span></a>
+</div>
+</section>
+<section class="exp gutter" id="experiencia">
+<div class="statement">
+<p class="big" data-i18n="exp_big">Construyo sitios web y sistemas con IA que trabajan solos, del diseño al despliegue.</p>
+</div>
+<a class="next" href="#proyectos" aria-label="Ir a Proyectos"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg></span></a>
+</section>
+<section class="work gutter" id="proyectos">
+<div class="head"><h2 data-i18n="work_title">Trabajo reciente</h2><span class="mono" data-i18n="work_count">4 destacados de 10</span></div>
+<ul class="rows">
+<li><a href="https://academyalphatrading.com/" target="_blank" rel="noopener" data-domain="academyalphatrading.com" data-hue="228">
+<span class="r-name">Academy Alpha Trading</span><span class="r-kind mono" data-i18n="k_edu">Educación · Trading</span><span class="r-arrow">↗</span></a></li>
+<li><a href="https://assistancefootballpro.es/" target="_blank" rel="noopener" data-domain="assistancefootballpro.es" data-hue="150">
+<span class="r-name">Assistance Football Pro</span><span class="r-kind mono" data-i18n="k_sport">Deporte</span><span class="r-arrow">↗</span></a></li>
+<li><a href="https://rotorwingservices.com/" target="_blank" rel="noopener" data-domain="rotorwingservices.com" data-hue="24">
+<span class="r-name">Rotor Wing Services</span><span class="r-kind mono" data-i18n="k_avi">Aviación · Servicios</span><span class="r-arrow">↗</span></a></li>
+<li><a href="https://multydrink.pages.dev/" target="_blank" rel="noopener" data-domain="multydrink.pages.dev" data-hue="300">
+<span class="r-name">MultyDrink</span><span class="r-kind mono" data-i18n="k_prod">Producto · Landing</span><span class="r-arrow">↗</span></a></li>
+</ul>
+<p class="more" data-i18n="work_more">10 sitios publicados en total. Aquí van los 4 más importantes.</p>
+<a class="next" href="#contacto" aria-label="Ir a Contacto"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg></span></a>
+</section>
+<section class="futbol" id="futbol" hidden>
+<div class="grass" aria-hidden="true"></div>
+<div class="lines" aria-hidden="true">
+<svg viewBox="0 0 1000 600" preserveAspectRatio="none">
+<rect x="0" y="0" width="1000" height="600" pathLength="1" class="ln"/>
+<path d="M500 0V600" pathLength="1" class="ln"/>
+<circle cx="500" cy="300" r="90" pathLength="1" class="ln"/>
+<path d="M0 140H150V460H0M1000 140H850V460H1000" pathLength="1" class="ln"/>
+<path d="M0 230H55V370H0M1000 230H945V370H1000" pathLength="1" class="ln"/>
+</svg>
+</div>
+<svg class="ball" id="ball" viewBox="0 0 100 100" aria-hidden="true">
+<circle cx="50" cy="50" r="46" fill="#F1F0EC" stroke="#0F1013" stroke-width="3"/>
+<path d="M50 30l17 12-6.5 20h-21L33 42z" fill="#0F1013"/>
+<path d="M50 30V8M67 42l20-8M60.5 62l13 17M39.5 62l-13 17M33 42l-20-8" stroke="#0F1013" stroke-width="3" fill="none"/>
+</svg>
+<div class="inner gutter">
+<div class="head"><h2 style="color:inherit;opacity:.7" data-i18n="fb_title">Fútbol</h2><span class="mono" data-i18n="fb_kicker">Alto rendimiento</span></div>
+<h2 class="big" data-i18n="fb_big">Disciplina<br>de cancha.</h2>
+<div class="ffacts">
+<div class="fx-small" data-i18n="fb_eq"><b>Ex-cantera La Equidad</b><span>Categoría Sub-15, Colombia.</span></div>
+<div class="fx-dubai" data-i18n="fb_dubai"><span class="mono">Dubái · Torneos internacionales</span><b>Partidos contra equipos de primera división.</b></div>
+</div>
+<p class="why" data-i18n="fb_why">Programo para financiar mi carrera deportiva. Cada sitio, cada automatización y cada cliente me acercan a jugar en el Barcelona.</p>
+<a class="next" href="#contacto" aria-label="Ir a Contacto"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg></span></a>
+</div>
+</section>
+</main>
+<footer class="gutter" id="contacto">
+<h2 data-i18n="ct_title">¿Construimos<br>algo <em>juntos</em>?</h2>
+<div class="cta-row">
+<a class="wa" href="https://wa.me/971586391275" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
+<span data-i18n="wa">Escríbeme por WhatsApp</span>
+</a>
+<span class="wa-num">+971 58 639 1275</span>
+</div>
+<div class="soc-groups">
+<div class="soc-group"><span class="mono" data-i18n="soc_code">Código</span><div class="socials">
+<a href="https://github.com/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+<a href="https://www.linkedin.com/in/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.1a4.2 4.2 0 0 1 3.8-2c4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></svg>LinkedIn</a>
+<a href="https://dev.to/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm3.2 4H4.5v6h1.7a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2Zm-.2 1.2c.4 0 .6.2.6.6v2.4c0 .4-.2.6-.6.6h-.3v-3.6H6Zm6.6-1.2H9.5v6h3.1v-1.2h-1.8V12.6h1.1v-1.2h-1.1v-1.2h1.8V9Zm1.2 0 1.6 6h1.1l1.6-6h-1.3l-.9 3.7-.9-3.7h-1.2Z"/></svg>Dev.to</a>
+<a href="https://codepen.io/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 22 8.5v7L12 22 2 15.5v-7L12 2Z"/><path d="M12 22v-6.5M22 8.5l-10 7-10-7M2 15.5l10-7 10 7M12 2v6.5"/></svg>CodePen</a>
+<a href="https://medium.com/@danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="7" cy="12" rx="5.5" ry="5.8"/><ellipse cx="16.5" cy="12" rx="2.8" ry="5.4"/><ellipse cx="21.5" cy="12" rx="1" ry="4.8"/></svg>Medium</a>
+<a href="https://www.tradingview.com/u/danilo_lhost/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 3 6-8 3 3"/><path d="M3 21h18"/></svg>TradingView</a>
+</div></div>
+<div class="soc-group"><span class="mono" data-i18n="soc_net">Redes</span><div class="socials">
+<a href="https://www.instagram.com/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>Instagram</a>
+<a href="https://www.tiktok.com/@danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.1 1.6 3.6 3.9 3.8v3a7 7 0 0 1-3.9-1.2v6.2A6.2 6.2 0 1 1 10.4 8.6v3.2a3 3 0 1 0 2.9 3V3h3.3Z"/></svg>TikTok</a>
+<a href="https://www.youtube.com/@danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8ZM10 15.1V8.9l5.2 3.1L10 15.1Z"/></svg>YouTube</a>
+<a href="https://x.com/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg>X</a>
+<a href="https://www.threads.net/@danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 11.2c-.5-2.2-2.1-3.3-4.3-3.3-2.6 0-4.1 1.8-4.1 1.8"/><path d="M19 7.5C17.6 4.6 15.2 3 12 3 7 3 4 6.6 4 12s3 9 8 9c3.6 0 6.5-2 6.5-5.2 0-2.6-2.3-4.3-5.6-4.3-2.4 0-3.9 1.2-3.9 2.8s1.3 2.5 3 2.5c2.7 0 3.6-2.3 3.4-5.6"/></svg>Threads</a>
+<a href="https://www.reddit.com/user/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.1a2.2 2.2 0 0 0-3.7-1.6 10.8 10.8 0 0 0-5.8-1.8l1-4.6 3.2.7a1.6 1.6 0 1 0 .2-.9l-3.6-.8a.5.5 0 0 0-.6.4l-1.1 5.2a10.8 10.8 0 0 0-5.9 1.8 2.2 2.2 0 1 0-2.4 3.6v.7c0 3.5 4 6.3 9 6.3s9-2.8 9-6.3v-.7a2.2 2.2 0 0 0 1.3-2ZM7 13.6a1.6 1.6 0 1 1 3.2 0 1.6 1.6 0 0 1-3.2 0Zm9 4.2a5.8 5.8 0 0 1-4 1.2 5.8 5.8 0 0 1-4-1.2.4.4 0 0 1 .6-.6 5 5 0 0 0 3.4 1 5 5 0 0 0 3.4-1 .4.4 0 1 1 .6.6Zm-.3-2.6a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z"/></svg>Reddit</a>
+<a href="https://www.facebook.com/danilo_lhost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2a21 21 0 0 0-2.4-.1C12.2 2.1 10.6 3.6 10.6 6.3v2.2H8V12h2.6v10H14V12h2.7l.4-3.5H14Z"/></svg>Facebook</a>
+</div></div>
+</div>
+<div class="foot">
+<span class="mono" style="color:var(--bone)">@danilo_lhost</span>
+<nav class="legal-links" aria-label="Legal">
+<span class="nocookie" data-i18n="nocookie"><i></i>Sin cookies</span>
+<button type="button" data-open="privacidad" data-i18n="lg_priv">Privacidad</button>
+<button type="button" data-open="terminos" data-i18n="lg_terms">Términos</button>
+</nav>
+<span class="mono" data-i18n="copy">© 2026 Danilo Fernández · Basado en Colombia</span>
+</div>
+</footer>
+<div class="legal" id="legal" hidden>
+<div class="legal-scrim" data-close></div>
+<div class="legal-sheet" role="dialog" aria-modal="true" aria-labelledby="legalTitle" tabindex="-1">
+<div class="legal-top"><span class="mono" data-i18n="lg_updated">Actualizado el 16 de octubre de 2026</span><button type="button" class="legal-x" data-close aria-label="Cerrar">✕</button></div>
+<article id="privacidad" hidden data-i18n="art_priv">
+<h2 id="legalTitle">Privacidad</h2>
+<p class="lead">Este sitio es mi portafolio. No te pide datos, no crea cuentas y no usa cookies.</p>
+<h3>Qué datos recojo</h3>
+<p>Ninguno de forma directa. No hay formularios, registro ni inicio de sesión.</p>
+<h3>Cookies</h3>
+<p>No uso cookies ni tecnologías parecidas para seguirte o medirte. Por eso no ves un aviso de cookies.</p>
+<h3>Analíticas y publicidad</h3>
+<p>No hay herramientas de analítica, píxeles de publicidad ni seguimiento entre sitios.</p>
+<h3>Alojamiento</h3>
+<p>El proveedor que sirve la página procesa datos técnicos mínimos, como la dirección IP y el navegador, solo para entregarla y protegerla de abusos.</p>
+<h3>Tipografías</h3>
+<p>Las fuentes se cargan desde Google Fonts, que recibe tu dirección IP para entregarlas. No instala cookies.</p>
+<h3>Enlaces externos</h3>
+<p>Si abres WhatsApp o alguna de mis redes, sales de este sitio y aplican las políticas de esa plataforma.</p>
+<h3>Tus derechos</h3>
+<p>Si me escribes, uso tu mensaje solo para responderte. Puedes pedirme en cualquier momento que lo borre, conforme a la Ley 1581 de 2012 de protección de datos de Colombia.</p>
+<h3>Contacto</h3>
+<p>WhatsApp: <span class="sel">+971 58 639 1275</span></p>
+</article>
+<article id="terminos" hidden data-i18n="art_terms">
+<h2>Términos</h2>
+<p class="lead">Al usar este sitio aceptas estas condiciones simples.</p>
+<h3>Uso</h3>
+<p>El sitio es informativo: muestra quién soy, lo que hago y mis proyectos.</p>
+<h3>Propiedad</h3>
+<p>El diseño, el código y los textos de este sitio son míos. Los proyectos que aparecen pertenecen a sus clientes y marcas, y se muestran como parte de mi trabajo.</p>
+<h3>Trading</h3>
+<p>Lo que comparto sobre trading describe mi experiencia personal. No es asesoría financiera ni una recomendación de inversión.</p>
+<h3>Enlaces externos</h3>
+<p>No controlo el contenido de los sitios a los que enlazo.</p>
+<h3>Cambios</h3>
+<p>Puedo actualizar estos términos. La fecha de arriba indica la última versión.</p>
+</article>
+</div>
+</div>
+<div class="peek" id="peek" aria-hidden="true"><div class="art"></div><span class="mono" id="peekDomain"></span><b id="peekName"></b></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<script src="/app.js"></script>
+<script src="/extra.js"></script>
+</body>
+</html>

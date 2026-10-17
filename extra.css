@@ -1,0 +1,46 @@
+.intro{display:flex;flex-direction:column;gap:22px;pointer-events:auto}
+.avail{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.75);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:999px;padding:8px 14px 8px 12px}
+.avail i{width:8px;height:8px;border-radius:50%;background:#1FA463;box-shadow:0 0 0 0 rgba(31,164,99,.5);animation:availPing 2.4s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes availPing{0%{box-shadow:0 0 0 0 rgba(31,164,99,.5)}100%{box-shadow:0 0 0 9px rgba(31,164,99,0)}}
+.intro-big{margin:0;font-family:var(--f-display);font-variation-settings:"wdth" 90,"opsz" 72;font-weight:500;font-size:clamp(40px,4.4vw,66px);line-height:1.02;letter-spacing:-.03em;text-wrap:balance;max-width:12ch}
+.intro-big .soft{color:var(--mute)}
+.intro-sub{margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.5;color:var(--mute);max-width:34ch}
+.hero-code > .code{display:none}
+@media not all{.avail i{animation:none}}
+.exp .statement{max-width:1100px;margin-bottom:0}
+.exp .statement .big{font-family:var(--f-display);font-variation-settings:"wdth" 88,"opsz" 72;font-weight:500;font-size:clamp(34px,5vw,76px);line-height:1.04;letter-spacing:-.03em}
+.statement .big .w{display:inline-block;opacity:.14;transform:translateY(.12em);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1),color .5s}
+.statement .big .w.on{opacity:1;transform:none}
+.statement .big .w.hl.on{color:var(--cobalt)}
+@media not all{.statement .big .w{opacity:1;transform:none;transition:none}}
+
+footer{border-top:1px solid var(--bone-line)}
+/* Trabajos: en celular no se apaga la lista; entrada y toque minimalistas */
+@media (hover:none),(pointer:coarse){.rows:hover a{opacity:1}.rows a:hover .r-name{transform:none}.rows a:hover .r-arrow{transform:none}}
+.rows a{position:relative;-webkit-tap-highlight-color:transparent;transition:opacity .45s var(--ease),transform .8s var(--ease)}
+.rows a::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:var(--cobalt);transform:scaleX(0);transform-origin:left;opacity:0;pointer-events:none}
+.rows li.in a::before{animation:rowSweep 1.3s var(--ease) forwards;animation-delay:inherit}
+@keyframes rowSweep{0%{transform:scaleX(0);opacity:1}55%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+.rows li.wait a{opacity:0;transform:translateY(18px)}
+.rows a:active .r-name{transform:translateX(8px)}
+.rows a:active .r-arrow{color:var(--cobalt);transform:translate(3px,-3px)}
+.rows a:active .r-kind{color:var(--cobalt)}
+@media not all{.rows li.wait a{opacity:1;transform:none}.rows li.in a::before{animation:none}}
+/* Stack: lluvia de código muy sutil de fondo */
+.stack{position:relative;overflow:hidden;isolation:isolate}
+.stack .col,.stack .next{position:relative;z-index:1}
+.code-rain{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(0,0,0,.4) 0%,#000 75%);mask-image:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(0,0,0,.4) 0%,#000 75%)}
+/* Menos espacio entre la flecha y la siguiente sección */
+.exp,.work{padding-top:clamp(28px,4.5vw,64px)}
+.trading{padding-top:clamp(64px,8vw,104px)}
+footer{padding-top:clamp(56px,8vw,110px)}
+/* Sin flecha entre Stack y la frase; espacio más corto */
+#stack .next{display:none}
+#stack{padding-bottom:clamp(20px,3vw,36px)}
+/* Sin etiqueta "Disponible para proyectos" */
+.avail{display:none}
+/* Escritorio: el nombre gigante no tapa el saludo ni el botón "Desliza" */
+@media (min-width:761px){
+.group > span{font-size:clamp(92px,min(17.5vw,28vh),270px)}
+.hero-code{top:72px;bottom:calc(min(17.5vw,28vh)*1.04 + 46px)}
+}
